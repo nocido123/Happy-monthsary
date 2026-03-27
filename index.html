@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f0f8ff;
+      margin-top: 50px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      background: #0078d7;
+      color: white;
+      border: none;
+      border-radius: 5px;
+    }
+    #message {
+      margin-top: 20px;
+      font-size: 20px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome!</h1>
+  <p>Click the button to reveal a surprise message:</p>
+  <button onclick="showMessage()">Reveal</button>
+  <div id="message"></div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("message").innerText = "🎉 Thanks for scanning the QR code! Stay awesome!";
+    }
+  </script>
+</body>
+</html>
